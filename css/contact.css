@@ -1,0 +1,157 @@
+/*FOOTER*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    height: 2rem;
+  }
+
+  * {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+/*NAVBAR*/
+
+#nav_menu {
+    clear:both; 
+}
+
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#nav_menu ul li {
+    float:left;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu ul li:hover >ul {
+    display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: flex;
+    width: 40rem;  
+    padding: .7em 0;
+    text-decoration: none;
+    background-color:darkslategrey;
+    color: white;   
+}
+
+
+#nav_menu ul li a.current {
+    font-weight: bold;
+}
+
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+    background-color: grey;
+}
+
+/*HEADER*/
+
+header {
+    background-color: darkslategrey;
+    padding: .9375em 1.875%;
+}
+
+header img {
+    float:left;
+    padding-right: 1.875%;
+}
+
+header h2 {
+    font-size: 230%;
+    color: white;
+}
+header h3 {
+    font-size: 100%;
+    padding-bottom: .75em; 
+    color: white;
+    margin-left: .25rem;
+}
+
+
+textarea {
+    height: 4rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    width: 800px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+section h1 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+section form {
+    margin: 0 auto;
+    
+}
+
+section input{
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 3px;
+    height: 2rem;
+    
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-submit-btn {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    height: 2rem;
+}
+
+a {
+    margin: 0 auto;
+    width: 20rem;
+    justify-content: center;
+    text-align: center;
+} 
+
+

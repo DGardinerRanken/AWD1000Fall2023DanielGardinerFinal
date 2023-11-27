@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    margin-bottom: 52rem;
+    font-size: 5rem;
+    z-index: 2;
+}
+
+.p-count, .c-count {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.p-choice, .c-choice {
+    text-align: center;
+    font-size: 110%;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    margin: 1rem 0 0 0;
+}
+
+.rock, .paper, .scissor {
+    padding: .8rem;
+    outline: none;
+    border: 2px darkblue;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10rem;
+    background-color: lightskyblue;
+    text-align: center;
+    margin: 1rem 3rem 1rem 3rem;
+}
+
+.move {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+.reload {
+    width: 20rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: lightskyblue;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 150%;
+    text-align: center;
+}
+
+.result {
+    font-size: 1.5rem;
+}
+
+section h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/*NAVBAR*/
+
+#nav_menu {
+    clear:both; 
+}
+
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#nav_menu ul li {
+    float:left;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu ul li:hover >ul {
+    display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 39.73rem;  
+    padding: .7em 0;
+    text-decoration: none;
+    background-color:darkslategrey;
+    color: white;   
+}
+
+
+#nav_menu ul li a.current {
+    font-weight: bold;
+}
+
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+    background-color: grey;
+}
+
+/*HEADER*/
+
+header {
+    background-color: darkslategrey;
+    padding: .9375em 1.875%;
+}
+
+header img {
+    float:left;
+    padding-right: 1.875%;
+}
+
+header h2 {
+    font-size: 230%;
+    color: white;
+}
+header h3 {
+    font-size: 100%;
+    padding-bottom: .75em; 
+    color: white;
+    margin-left: .25rem;
+}
+
+/*FOOTER*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    height: 2rem;
+  }
+
+  section {
+    background-color: aliceblue;
+  }

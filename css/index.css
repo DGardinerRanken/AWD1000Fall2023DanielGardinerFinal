@@ -1,0 +1,113 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+body {
+    background-color: aliceblue;
+}
+
+
+
+/*Carousel*/
+
+#myCarousel { 
+    margin: 5rem auto;
+    width: 40rem;
+    height: 25rem;
+    vertical-align: center;
+}
+
+
+
+/*NAVBAR*/
+
+#nav_menu{
+    clear:both; 
+}
+
+#nav_menu ul{
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#nav_menu ul li{
+    float:left;
+}
+
+#nav_menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#nav_menu ul ul li{
+    float: none;
+}
+
+#nav_menu ul li:hover >ul{
+    display: block;
+}
+
+#nav_menu > ul::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#nav_menu ul li a{
+    text-align: center;
+    display: block;
+    width: 40rem;  
+    padding: .7em 0;
+    text-decoration: none;
+    background-color:darkslategrey;
+    color: white;   
+}
+
+
+#nav_menu ul li a.current {
+    font-weight: bold;
+}
+
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+    background-color: grey;
+}
+
+/*HEADER*/
+
+header {
+    background-color: darkslategrey;
+    padding: .9375em 1.875%;
+}
+
+header img{
+    float:left;
+    padding-right: 1.875%;
+}
+
+header h2{
+    font-size: 230%;
+    color: white;
+}
+header h3{
+    font-size: 100%;
+    padding-bottom: .75em; 
+    color: white;
+    margin-left: .25rem;
+}
+
+/*FOOTER*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    height: 2rem;
+  }

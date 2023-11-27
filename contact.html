@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/contact.js" async></script>
+</head>
+<body>
+    <header>
+        <h2>Rock-Paper-Scissors.com</h2>
+		<h3>The game we all know and love!</h3>
+    </header>
+    <nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home Page</a></li>
+			<li><a href="faq.html" class="current">Frequently Asked Questions</a></li>
+			<li><a href="rps.html">Play Rock Paper Scissors</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+
+    <section>
+        <div class="container">
+            <div class="form-wrapper">
+        <textarea>Error messages:</textarea>
+        <h1 class="form-heading">Newsletter Sign Up - Rock-Paper-Scissors.com</h1>
+        
+        <!--I am not sure why, but upon submitting the form, the action takes me to "thankyou.html", but it says this page is not working even though I have created a "thankyou.html"-->
+        
+        <form class="contact-form" method="post" action="thankyou.html" target="_blank" id="form1">
+
+        <input type="text" placeholder="Enter Your Surname" id="lastName" required autofocus><br>
+
+        <input type="text" placeholder="Enter Your First Name" id="firstName" required><br>
+
+        <input type="radio" id="male" name="gender" value="male" required>Male
+        <input type="radio" id="female" name="gender" value="female" required>Female<br>
+
+        <input type="email" id="email" name="email" placeholder="Please enter your email address here." required><br>
+
+        <input type="number" id="phoneNumber" name="number" placeholder="Please enter your telephone number here." required><br>
+
+        <select id="states" required>
+            <option disabled selected value>Select Your State:</option>
+            <option value="AK">AK</option>
+            <option value="AL">AL</option>
+            <option value="AR">AR</option>
+            <option value="AZ">AZ</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DC">DC</option>
+            <option value="DE">DE</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="IA">IA</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="MA">MA</option>
+            <option value="MD">MD</option>
+            <option value="ME">ME</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MO">MO</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="NC">NC</option>
+            <option value="ND">ND</option>
+            <option value="NE">NE</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NV">NV</option>
+            <option value="NY">NY</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VA">VA</option>
+            <option value="VT">VT</option>
+            <option value="WA">WA</option>
+            <option value="WI">WI</option>
+            <option value="WV">WV</option>
+            <option value="WY">WY</option>
+        </select><br>
+
+        <input type="checkbox" id="newsletter">I was made aware of the newsletter from a friend, collegue, etc,.<br>
+
+        <input type="checkbox" id="noNewsletter">I was made aware of the newsletter from this website<br>
+
+        <input type="checkbox" id="played">I have played Rock, Paper, Scissors before today.<br>
+
+        <input type="checkbox" id="notPlayed">I have not played Rock, Paper, Scissors before today.<br>
+
+        <input type="submit" class="form-submit-btn" value="Send Contact Info">
+
+        <input type="button" id="reset-button" value="Reset Form" onclick="window.location.reload();">
+        </form>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Daniel Gardiner</p>
+    </footer>
+</body>
+</html>
