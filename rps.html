@@ -21,37 +21,19 @@
 			<li><a href="contact.html">Contact Us</a></li>
 		</ul>
 	</nav>
+    <section>
+    <h1 id="rps">Rock Paper Scissors Game</h1>
+    <div id="game">
+        <h2 class = "gameText" id="playerText">Player: </h2>
+        <h2 class = "gameText" id="compText">Computer: </h2>
+        <h2 class = "gameText" id="resultText">Result: </h2>
 
-    <section class="game"> 
-        <div class="title">Rock Paper Scissors</div> 
-
-        <div class="score">   
-            <div class="playerScore"> 
-                <h2>Player</h2> 
-                <p class="p-count count">0</p> 
-                <p class="p-choice">Choice</p>
-  
-            </div>        
-            <div class="computerScore"> 
-                <h2>Computer</h2> 
-                <p class="c-count count">0</p> 
-                <p class="c-choice">Choice</p>
-            </div> 
-        </div> 
-        
-        <div class="move">Choose your move</div> 
-        <div class="movesleft">Chances Left: 10 </div> 
-          
-        <div class="options"> 
-            <button class="rock">Rock</button> 
-            <button class="paper">Paper</button> 
-            <button class="scissor">Scissors</button>     
-        </div> 
-          
-        <div class="result"></div> 
-        <button class="reload">Restart</button> 
-
-    </section> 
+        <button class="choiceBtn" onclick="resetGame()">Rock</button>
+        <button class="choiceBtn" onclick="resetGame()">Paper</button>
+        <button class="choiceBtn" onclick="resetGame()">Scissors</button><br>
+        <button class="clearBtn" onclick="gameOver();">Reset</button>
+    </div>
+    </section>
     <footer>
         <p>&copy; 2023 Daniel Gardiner</p>
     </footer>
