@@ -44,6 +44,9 @@ section h1 {
 
 #nav_menu {
     clear:both; 
+    display: flex;
+    width: 100vw;
+    background-color: aliceblue;
 }
 
 #nav_menu ul {
@@ -51,10 +54,13 @@ section h1 {
     position: relative;
     margin: 0;
     padding: 0;
+    
 }
 
 #nav_menu ul li {
     float:left;
+    width: 25vw;
+
 }
 
 #nav_menu ul ul {
@@ -80,7 +86,7 @@ section h1 {
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    width: 40rem;  
+    width: 100%;  
     padding: .7em 0;
     text-decoration: none;
     background-color:darkslategrey;
